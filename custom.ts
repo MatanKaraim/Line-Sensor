@@ -1,4 +1,4 @@
-//% color=#0fbc11 icon="\uf0cb" block="Yahboom 8Ch Tracker"
+//% color="#008272" weight=100 icon="\uf018" block="חיישן קו"
 namespace yahboomTracker {
     const MODULE_ADDRESS = 0x12; // כתובת ה-I2C של המודול
     const REG_ADDRESS = 0x30;    // רגיסטר לקריאה דיגיטלית
@@ -162,7 +162,7 @@ namespace yahboomTracker {
      * קרא את המצב של חיישן ספציפי (1 עד 8). מחזיר 0 (לבן) או 1 (שחור/קו).
      * @param ch מספר החיישן בין 1 ל-8
      */
-    //% block="קרא חיישן מס' %ch (1-8)"
+    //% block="קרא חיישן מס' %ch"
     //% ch.min=1 ch.max=8 ch.defl=1
     //% weight=80
     export function readChannel(ch: number): number {
